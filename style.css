@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 375px;
+  height: 225px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ondas decorativas */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 40px solid rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -40px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 40px solid rgba(255, 255, 255, 0.04);
+  pointer-events: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mastercard-circles {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.circle.red {
+  background: #eb001b;
+  z-index: 1;
+}
+
+.circle.orange {
+  background: #f79e1b;
+  margin-left: -10px;
+}
+
+.logo h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Chip dourado */
+.chip {
+  width: 45px;
+  height: 34px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #c8922a, #f0c060, #b8862e, #e8b84b);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Detalhes */
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.number {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.bottom-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.valid-date {
+  text-align: right;
+}
+
+.valid-date h5 {
+  font-size: 14px;
+}
